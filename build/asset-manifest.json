@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e3dc6b95.css",
+    "main.js": "./static/js/main.455b5cb3.js",
+    "static/media/bacground2.png": "./static/media/bacground2.6ddcf07d3ddceca5bac2.png",
+    "static/media/bacground3.png": "./static/media/bacground3.67b072fa6b2d0e463f42.png",
+    "static/media/bacground1.png": "./static/media/bacground1.170874437a6614648b87.png",
+    "static/media/bottle.png": "./static/media/bottle.d93cd08f8e5393cc2671.png",
+    "static/media/Circe-Regular.ttf": "./static/media/Circe-Regular.da4c975f2e7df04af85e.ttf",
+    "static/media/bubble1.png": "./static/media/bubble1.92efc08f401878432019.png",
+    "static/media/sperm3.png": "./static/media/sperm3.455035407d62b80db363.png",
+    "static/media/pink_sperm.png": "./static/media/pink_sperm.d1577b69fb1b89b40f08.png",
+    "static/media/sperm2.png": "./static/media/sperm2.6dcbea7d8e48d6cf0353.png",
+    "static/media/dinpro.otf": "./static/media/dinpro.6ef85ba7df7db1508c63.otf",
+    "static/media/MYRIADPRO-REGULAR.otf": "./static/media/MYRIADPRO-REGULAR.6c518fcde55bd3397d56.otf",
+    "static/media/bubbleBlue2.png": "./static/media/bubbleBlue2.7e0544cc052c4f75e555.png",
+    "static/media/bubble2.png": "./static/media/bubble2.a208ece5576423368e51.png",
+    "static/media/gilroy-regular.ttf": "./static/media/gilroy-regular.b91b0127c56a8e5f9e83.ttf",
+    "static/media/gilroy-black.ttf": "./static/media/gilroy-black.bf3a5f799e6799d48062.ttf",
+    "static/media/sperm.png": "./static/media/sperm.6630e879b31a269b52b5.png",
+    "static/media/sperm4.png": "./static/media/sperm4.7de21c1bf6fc62aec0ef.png",
+    "static/media/bubblePink2.png": "./static/media/bubblePink2.8c760d4d765f8204f2de.png",
+    "static/media/bubble4.png": "./static/media/bubble4.07dbffe53bd57edda75f.png",
+    "static/media/bubble3.png": "./static/media/bubble3.09030902fbdeb132734b.png",
+    "static/media/sperm5.png": "./static/media/sperm5.22e7d506061151842a02.png",
+    "static/media/bubblePink3.png": "./static/media/bubblePink3.86423c8b46a0bfeb8564.png",
+    "static/media/bubbleBlue.png": "./static/media/bubbleBlue.34a56b766a885ded19ae.png",
+    "static/media/button.png": "./static/media/button.a76236d6d89cd7380ca2.png",
+    "static/media/moreBtn.png": "./static/media/moreBtn.8f9d86483e413c79fad7.png",
+    "index.html": "./index.html",
+    "main.e3dc6b95.css.map": "./static/css/main.e3dc6b95.css.map",
+    "main.455b5cb3.js.map": "./static/js/main.455b5cb3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3dc6b95.css",
+    "static/js/main.455b5cb3.js"
+  ]
+}

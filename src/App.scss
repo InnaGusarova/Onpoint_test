@@ -1,0 +1,596 @@
+.App {
+  width: 3072px;
+  display: flex;
+  flex-direction: row;
+
+  &__logo {
+    position: fixed;
+    left: 70px;
+    bottom: 15px;
+    width: 57px;
+    z-index: 100;
+  }
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 27px;
+  left: 66px;
+  z-index: 100;
+
+  &__home {
+    width: 22px;
+  }
+
+  &__separator {
+    display: block;
+    margin-left: 25px;
+    width: 1px;
+    height: 25px;
+    background-color: black;
+  }
+
+  &__text {
+    display: block;
+    font-family: Circe;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    color: rgb(39, 39, 39);
+  }
+}
+
+.firstSlide {
+  width: 100%;
+  height: 768px;
+  background-image: url('./img/bacground1.png');
+  background-size: contain;
+  position: relative;
+
+  &__header {
+    width: 810px;
+    margin-top: 168px;
+    margin-left: 70px;
+    font-family: Gilroy;
+    font-size: 105px;
+    line-height: 1.1;
+    position: relative;
+    z-index: 100;
+    color: rgb(23, 23, 23);
+  }
+
+  &__header--smallText {
+    display: block;
+    font-family: DINPro;
+    font-size: 29px;
+    margin-bottom: 10px;
+    color: rgb(36, 36, 36);
+  }
+
+  &__header--boldText {
+    margin-left: 60px;
+    font-family: Gilroy-black;
+  }
+
+  &__header--br {
+    display: block;
+    letter-spacing: 8px;
+  }
+
+  &__btn {
+    width: 288px;
+    height: 80px;
+    position: absolute;
+    bottom: 222px;
+    left: 627px;
+    z-index: 999;
+  }
+
+  &__bubble1 {
+    width: 224px;
+    position: absolute;
+    left: 515px;
+    bottom: -92px;
+    animation: animate_reduce 30s linear infinite;
+  }
+
+  &__bubble2 {
+    width: 115px;
+    position: absolute;
+    left: 807px;
+    top: 100px;
+    z-index: 200;
+    animation: animate_round  30s linear infinite;
+  }
+
+  &__bubble3 {
+    width: 73px;
+    position: absolute;
+    left: 710px;
+    top: -20px;
+    animation: animate_floating1 15s linear infinite;
+  }
+
+  &__bubble4 {
+    width: 72px;
+    position: absolute;
+    left: 30px;
+    top: 512px;
+    z-index: 50;
+    animation: animate_floating 20s linear infinite;
+  }
+
+  &__pink_sperm {
+    width: 608px;
+    position: absolute;
+    top: 151px;
+    left: 433px;
+    z-index: 150;
+  }
+}
+
+.secondSlide {
+  width: 100%;
+  height: 768px;
+  background-image: url('./img/bacground2.png');
+  background-size: contain;
+  position: relative;
+
+  &__header {
+    margin-top: 130px;
+    margin-left: 68px;
+    font-family: DINPro;
+    font-size: 25px;
+    color: rgb(23, 23, 23);
+    letter-spacing: 3px;
+  }
+
+  &__header--br {
+    display: block;
+  }
+
+  &__sperm1Img {
+    width: 420px;
+    top: 114px;
+    left: 786px;
+    animation: animate_opacity 3s linear; 
+    position: absolute;
+    transform: translate(-50px, -50px);
+  }
+
+  &__sperm2Img {
+    width: 730px;
+    top: 131px;
+    left: 620px;
+    animation: animate_opacity 2s linear; 
+    position: absolute;
+    transform: translate(-50px, -50px);
+  }
+
+  &__sperm3Img {
+    width: 657px;
+    top: 162px;
+    left: 433px;
+    animation: animate_opacity 3s linear; 
+    position: absolute;
+    transform: translate(-50px, -50px);
+  }
+
+  &__sperm4Img {
+    width: 134px;
+    top: 461px;
+    left: 946px;
+    animation: animate_opacity 2s linear; 
+    position: absolute;
+    transform: translate(-50px, -50px);
+  }
+
+  &__sperm5Img {
+    width: 138px;
+    top: 566px;
+    left: 939px;
+    animation: animate_opacity 3s linear; 
+    position: absolute;
+    transform: translate(-50px, -50px);
+  }
+
+  &__content {
+    margin-left: 70px;
+    margin-top: 50px;
+    width: 824px;
+    height: 436px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: unset;
+    align-items: center;
+  }
+
+  &__scroller {
+    height: 436px;
+    width: 4px;
+    border-radius: 11px;
+    background-color: black;
+    position: relative;
+    top: 3px;
+    left: 10px;
+  }
+
+  &__btn {
+    position: absolute;
+    width: 30px;
+    height: 112px;
+    top: -5px;
+    left: -13px;
+  }
+
+  &__textWrapper {
+    width: 775px;
+    height: 436px;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    color: rgb(23, 23, 23);
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    box-shadow: 5.446px 8.387px 232.5px 17.5px rgb(157, 185, 198, 0.39);
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__text {
+    font-family: MyriadPro;
+    font-size: 22px;
+    line-height: 1.4;
+    position: relative;
+    letter-spacing: 1.4px;
+  }
+}
+
+.shadowUp {
+  position: absolute;
+  height: 74px;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  box-shadow: inset 0px 20px 30px 7px rgb(255 255 255);
+  z-index: 100;
+}
+
+.shadowDown {
+  position: absolute;
+  height: 74px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset -12px -32px 36px 3px rgb(255 255 255);
+  z-index: 100;
+}
+
+.thirdSlide {
+  width: 100%;
+  height: 768px;
+  background-image: url('./img/bacground3.png');
+  background-size: contain;
+  position: relative;
+
+  &__bottleImg {
+    width: 264px;
+    position: absolute;
+    bottom: -1px;
+    left: 40px;
+    z-index: 99;
+  }
+  &__bubble {
+    position: absolute;
+  }
+  &__bubblePink1Img {
+    width: 34px;
+    top: 199px;
+    left: 50px;
+    z-index: 97;
+    animation: animate_reduceUp 10s linear infinite;
+  }
+  &__bubblePink2Img {
+    width: 112px;
+    top: 345px;
+    left: 217px;
+    z-index: 98;
+    animation: animate_reduceDown 15s linear infinite;
+  }
+  &__bubblePink3Img {
+    width: 75px;
+    top: 561px;
+    left: 28px;
+    z-index: 100;
+    animation: animate_reduceDown 10s linear infinite;
+  }
+  &__bubbleBlueImg {
+    width: 68px;
+    top: 217px;
+    left: 199px;
+    z-index: 99;
+    animation: animate_reduceDown 10s linear infinite;
+  }
+  &__bubbleBlue2Img {
+    width: 142px;
+    top: 700px;
+    left: 235px;
+    z-index: 200;
+    animation: animate_reduceUp 15s linear infinite;
+  }
+  &__bubbleBlue3Img {
+    width: 34px;
+    top: 484px;
+    left: 8px;
+    z-index: 200;
+    animation: animate_reduceDown 12s linear infinite;
+  }
+  &__bubbleBlue4Img {
+    width: 45px;
+    top: 60px;
+    left: 201px;
+    z-index: 98;
+    animation: animate_reduceDown 7s linear infinite;
+  }
+  
+  &__wrapper {
+    margin-top: 160px;
+    margin-left: 278px;
+    width: 658px;
+  }
+  &__header {
+    margin-left: 67px;
+    font-family: Gilroy;
+    font-size: 94px;
+    letter-spacing: 11px;
+  }
+  &__header--smallText, .popUp__header--smallText {
+    display: block;
+    font-family: DINPro;
+    font-size: 29px;
+    letter-spacing: normal;
+    margin-left: 4px;
+  }
+  &__header--boldText, .popUp__header--boldText {
+    margin-left: 4px;
+    font-family: Gilroy-black;
+  }
+  &__content {
+    width: 664px;
+    margin-top: 65px;
+    margin-left: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__bigContainer {
+    width: 357px;
+    height: 266px;
+    padding: 50px 10px 50px 72px;
+    background-color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 5px 8px 232px 17px rgba(157,185,198,0.39);
+    box-sizing: border-box;
+  } 
+  &__smallContainer{
+    width: 263px;
+    height: 150px;
+    padding: 50px 75px 38px 46px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: 5px 8px 232px 17px rgba(157,185,198,0.39);
+  }
+  &__icon1 {
+    width: 63px;
+    position: absolute;
+    top: -29px;
+  }
+  &__icon2 {
+    width: 63px;
+    position: absolute;
+    top: -22px;
+    left: 442px;
+  }
+  &__moreBtn {
+    position: absolute;
+    width: 262px;
+    height: 78px;
+    bottom: 2px;
+    left: 398px;
+  }
+  &__text {
+    font-family: MyriadPro;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
+  }
+}
+.popUp {
+  margin-top: 124px;
+  margin-left: 166px;
+  width: 798px;
+  height: 573px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: white;
+  position: relative;
+  z-index: 90;
+
+  &__background {
+    display: block;
+    width: 1024px;
+    height: 768px;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(22, 39, 62, 0.7);
+  }
+  &__btnClose {
+    width: 36px;
+    position: absolute;
+    right: 32px;
+    top: 29px;
+  }
+
+  &__header {
+    margin-left: 186px;
+    padding-top: 18px;
+    font-family: Gilroy;
+    font-size: 94px;
+    letter-spacing: 11px;
+    color: rgb(36, 36, 36);
+  }
+
+  &__content {
+    width: 500px;
+    margin-top: 7px;
+    margin-left: 186px;
+    font-family: Gilroy;
+  }
+
+  &__numbering {
+    display: block;
+    font-size: 26px;
+    color: rgb(140, 201, 232);
+    font-family: Gilroy-black;
+  }
+
+  &__text {
+    padding-top: 15px;
+    font-family: DINPro;
+    font-size: 25px;
+    color: rgb(46, 46, 46);
+  }
+  &__navigation {
+    margin-top: 54px;
+    margin-left: 184px;
+    width: 93px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn{
+    width: 10px;
+  }
+  &__indicator {
+    width: 32px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__open {
+    width: 11px;
+    height: 11px;
+    border: none;
+    background-color: rgb(252, 109, 169);
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  &__close {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 3px;
+  }
+}
+
+.displayNone {
+  display: none;
+}
+
+.margin {
+  margin-top: 20px;
+}
+
+.offset {
+  offset: 0;
+}
+
+@keyframes animate_reduce {
+	0% {
+		transform: scale(1, 1) translate(0, 0);
+	}
+	50% {
+		transform: scale(0.6, 0.6) translate(-200px, -200px);
+	}
+	100% {
+		transform: scale(1, 1) translate(0px, 0px);
+	}
+}
+
+@keyframes animate_round {
+  from { transform: rotate(180deg) translateX(100px); }
+  to   { transform: rotate(540deg) translateX(100px); }
+}
+
+@keyframes animate_floating {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(40px, 100px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes animate_floating1 {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(40px, 90px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes animate_opacity {
+  0% {
+		transform: translate(0, 0);
+    opacity: 0%;
+	}
+	100% {
+		transform: translate(-50px, -50px);
+    opacity: 100%;
+	}
+}
+
+@keyframes animate_reduceUp {
+  0% {
+    transform: scale(1, 1) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.6, 0.6) translate(-50px, -50px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+@keyframes animate_reduceDown {
+  0% {
+    transform: scale(1, 1) translate(0, 0);
+  }
+  50% {
+    transform: scale(0.6, 0.6) translate(50px, 50px);
+  }
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}

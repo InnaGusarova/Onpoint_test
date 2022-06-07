@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Circe";
+  src: local("Circe"),
+   url("./fonts/Circe-Regular/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "DINPro";
+  src: local("DINPro"),
+   url("./fonts/DINPro/dinpro.otf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-black";
+  src: local("Gilroy-black"),
+   url("./fonts/Gilroy/gilroy-black.ttf") format("truetype");
+   font-weight: bold;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+   url("./fonts/Gilroy/gilroy-regular.ttf") format("truetype");
+   font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: local("MyriadPro"),
+   url("./fonts/MyriadPro/MYRIADPRO-REGULAR.otf") format("truetype");
+   font-weight: normal;
+}
+
+body {
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto;
+  
+}
+#root {
+  width: 100%;
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: inherit;
+  padding: 0;
+}
+p { 
+  margin: 0;
+}
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
